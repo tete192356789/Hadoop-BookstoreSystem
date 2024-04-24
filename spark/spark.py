@@ -1,6 +1,6 @@
 import sys
 from pyspark.sql import SparkSession
-from pyspark.sql import Row, Col
+from pyspark.sql import Row
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
