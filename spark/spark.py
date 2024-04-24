@@ -16,7 +16,7 @@ clean_df = df.withColumn("customer_name", trim(col("customer_firstname"))) \
                                 .when(df['gender'] =='F','FEMALE')
                                 .otherwise('NA'))
 
-final_cust_df = clean_cust_df.selectExpr("customer_id as cust_id", \
+final_cust_df = clean_df.selectExpr("customer_id as cust_id", \
                                         "customer_name as cust_nm", \
                                         "customer_email as cust_email", \
                                         "customer_since as cust_strt_dt", \
